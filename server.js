@@ -2,7 +2,7 @@ const app = require('koa')()
 const router = require('koa-router')()
 const reload = "<script async src='/browser-sync/browser-sync-client.2.14.0.js'></script>"
 const otpl = require("opentpl")
-const config = require("./config")(__dirname+'/app') //TODO
+const config = require("./config")(__dirname) //TODO
 let tried = 0;
 let listen;
 listen = (port, cb) => {

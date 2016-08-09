@@ -8,7 +8,7 @@ class Initiator {
         while (dir.indexOf('\\') > -1) {
             dir = dir.replace('\\', '/')
         }
-        this.dir = dir+'/app'
+        this.dir = dir
         this.configFile = dir + '/otplrc.json'
     }
 

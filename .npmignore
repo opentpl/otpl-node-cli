@@ -18,3 +18,5 @@ build
 components
 coverage
 sandbox
+app/bin/otil
+app/otplrc.json

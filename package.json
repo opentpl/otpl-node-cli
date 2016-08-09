@@ -1,6 +1,6 @@
 {
   "name": "otpl",
-  "version": "0.1.0",
+  "version": "0.4.1",
   "description": "OpenTPL CLI tools or starter",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "gulp-nodemon": "^2.1.0",
     "koa": "^1.2.1",
     "koa-router": "^5.4.0",
-    "koa-static": "^2.0.0"
+    "koa-static": "^2.0.0",
+    "opentpl": "^0.4.1"
   }
 }
