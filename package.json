@@ -1,0 +1,36 @@
+{
+  "name": "otpl",
+  "version": "0.1.0",
+  "description": "OpenTPL CLI tools or starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentpl/otpl-node-cli.git"
+  },
+  "keywords": [
+    "opentpl",
+    "otpl",
+    "otplcli",
+    "cli"
+  ],
+  "author": "Jun Hwong",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/opentpl/otpl-node-cli/issues"
+  },
+  "homepage": "https://github.com/opentpl/otpl-node-cli#readme",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.1.0",
+    "koa": "^1.2.1",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0"
+  }
+}

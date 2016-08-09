@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "6"
+  - "5"
+  - "4"
+# TODO: 以下版本未测试通过，暂时不予理会。查看日志主要是使用ES6的问题。
+#  - "1"
+#  - "0.12"
+#  - "0.11"
+#  - "0.10"
+before_install:
+  - npm install -g typescript
+  - npm install -g typings
+# 指定分支
