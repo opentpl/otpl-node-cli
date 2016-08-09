@@ -133,53 +133,16 @@ class Initiator {
         }
 
         actions.name()
-        return;
-
-        rl.on('line', (line) => {
-            action(line)
-        }).on('close', () => {
-            console.log('abort init!');
-            process.exit(0);
-        });
-
-        action = (line) => {
-            if (line) {
-                config.name = line; //验证名称
-            }
-            rl.prompt();
-            rl.write(`项目名称：(${config.name})`.green);
-
-            action = line => {
-                console.log(`视图路径：(${config.viewPath})`);
-                rl.prompt();
-            }
-        }
-
-        console.log(`项目名称：(${config.name})`);
-        rl.prompt();
     }
 
     make() {
         const config = require("./config")(this.dir) //TODO
-        // this.config = this.loadConfig()
-        // if (!this.config) {
-        //     console.log('未找到配置文件，可以使用 init 命令来初始化。'.red)
-        // }
-
         require('./gulpfile')(this.dir,config)
-        // return
-        // var last = exec('node gulpfile.js')
-
-        // last.stdout.on('data', function (data) {
-        //     console.log(`> ${data}`.cyan);
-        // });
-
-        // last.on('exit', function (data) {
-        //     console.log(`> ${data}`.cyan);
-        // });
     }
-
-
+    serve(){
+        const config = require("./config")(this.dir) //TODO
+        require('./gulpfile')(this.dir,config)
+    }
 }
 
 module.exports = function (dir) {

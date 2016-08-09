@@ -50,6 +50,14 @@ program
         new Processor(__dirname).init();
     });
 
+
+program
+    .command('serve')
+    .description('启动开发服务器')
+    .action(function (env, options) {
+        new Processor(__dirname).serve();
+    });
+
 program
     .command('make')
     .description('编译项目视图')
