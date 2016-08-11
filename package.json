@@ -2,9 +2,9 @@
   "name": "otpl",
   "version": "0.4.3",
   "description": "OpenTPL CLI tools or starter",
-  "main": "index.js",
+  "main": "./bin",
   "bin": {
-    "cnpm": "./bin/otpl"
+    "otpl": "./bin/otpl"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

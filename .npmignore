@@ -8,10 +8,12 @@ typings
 tsconfig.json
 typings.json
 
+.git
 *.log
 *.orig
 .idea
 *.node
+*.done
 .DS_Store
 node_modules
 build

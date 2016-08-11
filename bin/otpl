@@ -30,7 +30,7 @@ program
     .command('init')
     .description('初始化项目')
     .action(function (env, options) {
-        new Processor(__dirname).init();
+        new Processor(process.cwd()).init();
     });
 
 
@@ -38,7 +38,7 @@ program
     .command('serve')
     .description('启动开发服务器')
     .action(function (env, options) {
-        new Processor(__dirname).serve();
+        new Processor(process.cwd()).serve();
     });
 
 program
