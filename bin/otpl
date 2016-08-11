@@ -1,22 +1,6 @@
-// const readline = require('readline');
+#!/usr/bin/env node
 
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
-
-// // rl.prompt(true)
-// rl.question('What do you think of Node.js? ', (answer) => {
-//   // TODO: Log the answer in a database
-//   console.log('Thank you for your valuable feedback:', answer);
-
-//   rl.write('Delete this!');
-// // Simulate Ctrl+u to delete the line written previously
-// rl.write("null", {ctrl: true, name: 'u'});
-
-
-//   rl.close();
-// });
+'use strict';
 
 var colors = require('colors');
 //http://blog.csdn.net/dai_jing/article/details/47295067
@@ -34,14 +18,13 @@ colors.setTheme({
     error: 'red'
 });
 
-var Processor=require('./processor')
+var Processor=require('../lib/processor')
 
 var program = require('commander');
 //https://github.com/tj/commander.js
 
 program
-    .version('0.0.1');
-
+    .version('0.4.3');
 
 program
     .command('init')
@@ -86,21 +69,3 @@ program
     });
 
 program.parse(process.argv);
-
-
-// if (program.initialize) {
-//     console.log('init')
-// }
-// else if (program.make && program.watch) {
-//     console.log('监视 make')
-// }
-// else if (program.make) {
-//     console.log('监视 make')
-// }
-// else if (program.compile) {
-//     console.log('compile:' + program.compile)
-// }
-// else {
-
-// }
-
